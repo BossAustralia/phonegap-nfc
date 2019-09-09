@@ -13,7 +13,7 @@
     <keywords>nfc, NFC, NDEF</keywords>
     <repo>https://github.com/chariotsolutions/phonegap-nfc.git</repo>
     <issue>https://github.com/chariotsolutions/phonegap-nfc/issues</issue>
-
+    <preference name="MY_CUSTOM_STRING" default="default-value" />
     <platform name="android">
         <js-module src="www/phonegap-nfc.js" name="NFC">
             <runs />
@@ -30,7 +30,7 @@
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="com.outsystems.nfc/uri"/>
+                <data android:scheme="$MY_CUSTOM_STRING"/>
             </intent-filter>
         </config-file>
 
