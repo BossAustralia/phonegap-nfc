@@ -13,7 +13,7 @@
     <keywords>nfc, NFC, NDEF</keywords>
     <repo>https://github.com/chariotsolutions/phonegap-nfc.git</repo>
     <issue>https://github.com/chariotsolutions/phonegap-nfc/issues</issue>
-    <preference name="APP_IDENTIFIER" default="com.au.prd.BOSSTAMobile" />
+    <preference name="APP_IDENTIFIER" default="com.sg.dev.BOSSTAMobile" />
     <platform name="android">
         <js-module src="www/phonegap-nfc.js" name="NFC">
             <runs />
