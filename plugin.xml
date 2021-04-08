@@ -39,7 +39,7 @@
         <source-file src="src/android/src/com/chariotsolutions/nfc/plugin/Util.java"
             target-dir="src/com/chariotsolutions/nfc/plugin"/>
         
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="overwrite" target="/manifest/application">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:requestLegacyExternalStorage="true" />
         </edit-config>
         
