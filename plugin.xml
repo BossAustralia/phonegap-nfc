@@ -14,8 +14,9 @@
     <repo>https://github.com/chariotsolutions/phonegap-nfc.git</repo>
     <issue>https://github.com/chariotsolutions/phonegap-nfc/issues</issue>
     <preference name="APP_IDENTIFIER" default="com.sg.dev.BOSSTAMobile" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <platform name="android">
-        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        
         <js-module src="www/phonegap-nfc.js" name="NFC">
             <runs />
         </js-module>
