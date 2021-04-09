@@ -15,6 +15,7 @@
     <issue>https://github.com/chariotsolutions/phonegap-nfc/issues</issue>
     <preference name="APP_IDENTIFIER" default="com.sg.dev.BOSSTAMobile" />
     <platform name="android">
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
         <js-module src="www/phonegap-nfc.js" name="NFC">
             <runs />
         </js-module>
@@ -39,9 +40,7 @@
         <source-file src="src/android/src/com/chariotsolutions/nfc/plugin/Util.java"
             target-dir="src/com/chariotsolutions/nfc/plugin"/>
         
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="overwrite" target="/manifest/application">
-            <application android:requestLegacyExternalStorage="true" />
-        </edit-config>
+
         
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.NFC"/>
